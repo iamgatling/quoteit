@@ -82,3 +82,20 @@ h1 {
 	margin-right: 10px;
 	font-size: 24px;
 }
+#bell-icon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px; /* Adjust the size as needed */
+	cursor: pointer;
+  }
+  
+  @media screen and (max-width: 350px) {
+	.quote-text {
+		font-size: 25px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 30px;
+		color: #1a1a1a;
+	}
+  }

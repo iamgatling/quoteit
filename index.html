@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Random Quote Generator</h1>
+		<h1>Quote It</h1>
 		<div class="quote-container">
 			<div class="quote-text">
 				<i class="fas fa-quote-left"></i>
@@ -25,7 +25,19 @@
 		</div>
 	</div>
 
-
+	<i id="bell-icon" class="bi bi-bell-fill"></i>
+	<script>
+		// Request permission to show notifications
+		if ("Notification" in window) {
+		  Notification.requestPermission().then(function (permission) {
+			if (permission === "granted") {
+			  console.log("Notification permission granted");
+			}
+		  });
+		}
+	  </script>
+	  
+	<script src="bell.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>
